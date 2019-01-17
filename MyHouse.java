@@ -11,6 +11,7 @@ public class MyHouse
     // instance variables - replace the example below with your own
     //ACCESS_MODIFIER TYPE NAME
     private Circle ground;
+    private Circle ground2;
     private Square base;
     private Triangle roof;
     private Square chimney;
@@ -28,8 +29,12 @@ public class MyHouse
     private Square door2;
     private Circle doorknob;
     private Bird bird;
-    private Circle road;
+    private Circle road1;
+    private Circle road2;
+    private Circle road3;
+    private Circle road4;
     
+   
     
   
     
@@ -42,6 +47,7 @@ public class MyHouse
     {
         // initialise instance variables
        ground = new Circle();
+       ground2 = new Circle();
        base = new Square();
        roof = new Triangle();
        chimney = new Square();
@@ -58,13 +64,18 @@ public class MyHouse
        door = new Square();
        door2 = new Square();
        doorknob = new Circle();
+       road1 = new Circle();
+       road2 = new Circle();
+       road3 = new Circle();
+       road4 = new Circle();
        
      
        // draw the rest of the house automatically
        drawHouse();
        
        // Draw the bird
-      bird = new Bird(0,50);
+       bird = new Bird(0, 50);
+
 
     
     }
@@ -78,11 +89,42 @@ public class MyHouse
         
         //Set up the sun (Ctrl+Space）
         
+        ground2.makeVisible();
+        ground2.changeColor("red");
+        ground2.changeSize(1000);
+        ground2.moveVertical(138);
+        ground2.moveHorizontal(-269);
+        
+        
         ground.makeVisible();
         ground.changeColor("yellow");
         ground.changeSize(1000);
         ground.moveVertical(140);
         ground.moveHorizontal(-270);
+        
+        
+        
+        road1.makeVisible();
+        road1.changeSize(430);
+        road1.changeColor("white");
+        road1.moveVertical(150);
+        road1.moveHorizontal(-145);
+        
+        road3.makeVisible();
+        road3.changeSize(430);
+        road3.changeColor("red");
+        road3.moveVertical(32);
+        road3.moveHorizontal(-296);
+        
+        road2.makeVisible();
+        road2.changeSize(430);
+        road2.changeColor("yellow");
+        road2.moveVertical(35);
+        road2.moveHorizontal(-295);
+        
+        
+        
+        
         
         
         chimney.makeVisible();
