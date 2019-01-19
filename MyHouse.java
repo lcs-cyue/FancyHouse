@@ -74,7 +74,10 @@ public class MyHouse
        drawHouse();
        
        // Draw the bird
-       bird = new Bird(0, 50);
+       bird = new Bird(0, 100);
+       bird = new Bird(200, 100);
+       bird = new Bird(300, 50);
+       bird = new Bird(170, 0);
 
 
     
